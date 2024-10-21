@@ -44,7 +44,7 @@ TFT_22_ILI9225 tft = TFT_22_ILI9225(TFT_RST, TFT_RS, TFT_CS, TFT_LED, TFT_BRIGHT
 
 // Variables and constants
 uint16_t x, y;
-boolean flag = false;
+bool flag = false;
 
 /*
  * Tux black/white image in 180x220 converted using Ardafruit bitmap converter

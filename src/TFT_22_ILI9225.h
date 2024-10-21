@@ -172,11 +172,11 @@ class TFT_22_ILI9225 {
 
         /// Invert screen
         /// @param     flag true to invert, false for normal screen
-        void invert(boolean flag);
+        void invert(bool flag);
 
         /// Switch backlight on or off
         /// @param     flag true=on, false=off
-        void setBacklight(boolean flag); 
+        void setBacklight(bool flag); 
 
         /// Set backlight brightness
         /// @param     brightness sets backlight brightness 0-255
@@ -184,7 +184,7 @@ class TFT_22_ILI9225 {
 
         /// Switch display on or off
         /// @param     flag true=on, false=off
-        void setDisplay(boolean flag);  
+        void setDisplay(bool flag);  
 
         /// Set orientation
         /// @param     orientation orientation, 0=portrait, 1=right rotated landscape, 2=reverse portrait, 3=left rotated landscape

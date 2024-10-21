@@ -543,7 +543,7 @@ void TFT_22_ILI9225::clear() {
 }
 
 
-void TFT_22_ILI9225::invert(boolean flag) {
+void TFT_22_ILI9225::invert(bool flag) {
     startWrite();
     _writeCommand16(flag ? ILI9225C_INVON : ILI9225C_INVOFF);
     //_writeCommand(0x00, flag ? ILI9225C_INVON : ILI9225C_INVOFF);
@@ -551,7 +551,7 @@ void TFT_22_ILI9225::invert(boolean flag) {
 }
 
 
-void TFT_22_ILI9225::setBacklight(boolean flag) {
+void TFT_22_ILI9225::setBacklight(bool flag) {
     blState = flag;
 #ifndef ESP32
     if (_led) analogWrite(_led, blState ? _brightness : 0);
@@ -565,7 +565,7 @@ void TFT_22_ILI9225::setBacklightBrightness(uint8_t brightness) {
 }
 
 
-void TFT_22_ILI9225::setDisplay(boolean flag) {
+void TFT_22_ILI9225::setDisplay(bool flag) {
     if (flag) {
         startWrite();
         _writeRegister(0x00ff, 0x0000);
